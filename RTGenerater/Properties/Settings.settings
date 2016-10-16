@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RTGenerater.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RemoteSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest</Value>
+    </Setting>
+    <Setting Name="LocalSource" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Templates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">./Templates</Value>
+    </Setting>
+    <Setting Name="RouteTables" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">./RouteTables</Value>
+    </Setting>
+    <Setting Name="Outputs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">./Outputs</Value>
+    </Setting>
+    <Setting Name="CurrentLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NZ</Value>
+    </Setting>
+    <Setting Name="CurrentOS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Windows</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
