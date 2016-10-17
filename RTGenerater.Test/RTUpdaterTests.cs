@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RTGenerater;
+using RouteTable;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTGenerater.Tests
+namespace RouteTable.Tests
 {
     [TestClass()]
     public class RTUpdaterTests
@@ -18,27 +18,27 @@ namespace RTGenerater.Tests
         {
             RTGenerater rtu = new RTGenerater();
 
-            if (File.Exists(Config.RemoteRouteTable.Path))
+            if (File.Exists(Config.Remote.Path))
             {
-                File.Delete(Config.RemoteRouteTable.Path);
+                File.Delete(Config.Remote.Path);
             }
 
-            rtu.FetchRemote(Config.RemoteRouteTable.URI, Config.RemoteRouteTable.Path);
+            rtu.FetchRemote(Config.Remote.URI, Config.Remote.Path);
 
-            Assert.IsTrue(File.Exists(Config.RemoteRouteTable.Path));
+            Assert.IsTrue(File.Exists(Config.Remote.Path));
         }
 
         [TestMethod()]
         [ExpectedException(typeof(FileNotFoundException))]
         public void OptimizeTest_NoOriginalFile_FileNotFoundException()
         {
-            if (File.Exists(Config.RemoteRouteTable.Path))
+            if (File.Exists(Config.Remote.Path))
             {
-                File.Delete(Config.RemoteRouteTable.Path);
+                File.Delete(Config.Remote.Path);
             }
 
             RTGenerater rtu = new RTGenerater();
-            rtu.Optimize(Config.RemoteRouteTable.Path, Config.RemoteRouteTable.IPRegx);
+            rtu.Optimize(Config.Remote.Path, Config.Remote.IPRegx);
         }
 
         [TestMethod()]
@@ -50,7 +50,7 @@ namespace RTGenerater.Tests
             }
 
             RTGenerater rtu = new RTGenerater();
-            rtu.Optimize(Config.TestData.RemoteRouteTable, Config.RemoteRouteTable.IPRegx);
+            rtu.Optimize(Config.TestData.RemoteRouteTable, Config.Remote.IPRegx);
 
             if(Config.Location == "NZ")
             {

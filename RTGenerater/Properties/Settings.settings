@@ -18,7 +18,7 @@
       <Value Profile="(Default)">./Outputs</Value>
     </Setting>
     <Setting Name="CurrentLocation" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">JP</Value>
+      <Value Profile="(Default)">NZ</Value>
     </Setting>
     <Setting Name="CurrentPlatform" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Windows</Value>

@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace RTGenerater
+namespace RouteTable
 {
     public static class Config
     {
@@ -36,9 +36,9 @@ namespace RTGenerater
                 return Properties.Settings.Default.Outputs;
             }
         }
-        public static class RemoteRouteTable
+        public static class Remote
         {
-            static RemoteRouteTable()
+            static Remote()
             {
                 Directory.CreateDirectory(Properties.Settings.Default.RouteTables);              
             }

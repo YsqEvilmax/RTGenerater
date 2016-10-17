@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RTGenerater.Properties {
+namespace RouteTable.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -70,7 +70,7 @@ namespace RTGenerater.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("JP")]
+        [global::System.Configuration.DefaultSettingValueAttribute("NZ")]
         public string CurrentLocation {
             get {
                 return ((string)(this["CurrentLocation"]));

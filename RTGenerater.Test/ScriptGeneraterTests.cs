@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RTGenerater;
+using RouteTable;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTGenerater.Tests
+namespace RouteTable.Tests
 {
     [TestClass()]
     public class ScriptGeneraterTests
