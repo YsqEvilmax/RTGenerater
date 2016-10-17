@@ -70,7 +70,7 @@ namespace RTGenerater.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("NZ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("JP")]
         public string CurrentLocation {
             get {
                 return ((string)(this["CurrentLocation"]));
@@ -80,9 +80,21 @@ namespace RTGenerater.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Windows")]
-        public string CurrentOS {
+        public string CurrentPlatform {
             get {
-                return ((string)(this["CurrentOS"]));
+                return ((string)(this["CurrentPlatform"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("./TestData")]
+        public string TestData {
+            get {
+                return ((string)(this["TestData"]));
+            }
+            set {
+                this["TestData"] = value;
             }
         }
     }

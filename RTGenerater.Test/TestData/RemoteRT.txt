@@ -1,0 +1,9 @@
+apnic|IN|ipv4|27.125.200.0|1024|20101014|allocated
+apnic|JP|ipv4|27.125.204.0|1024|20101018|allocated
+apnic|AU|ipv4|27.125.208.0|4096|20101014|allocated
+apnic|MY|ipv4|27.125.224.0|8192|20101013|allocated
+apnic|NZ|ipv4|27.123.20.0|1024|20101007|allocated
+apnic|KR|ipv4|27.126.0.0|16384|20101013|allocated
+apnic|JP|ipv4|27.126.64.0|16384|20101014|allocated
+apnic|JP|ipv4|27.126.128.0|4096|20101014|allocated
+apnic|CN|ipv4|14.208.0.0|1048576|20100906|allocated
